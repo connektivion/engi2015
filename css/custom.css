@@ -1,0 +1,272 @@
+html{
+  background-color: #000;
+}
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+}
+
+/*asdasdas */
+.only{
+    position: absolute;
+    top: -32px;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    display: none;
+}
+.rotater {
+  display: none;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    -webkit-animation:spin 120s linear infinite;
+    -moz-animation:spin 120s linear infinite;
+    animation:spin 120s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+.stationary{
+  position: relative;
+  margin:auto;
+  height: 35%;
+  width: 35%;
+  left: 33%!important;
+  top:15%!important;
+
+}
+.anti{
+  -webkit-animation:aspin 160s linear infinite;
+    -moz-animation:aspin 160s linear infinite;
+    animation:aspin 160s linear infinite;
+}
+@-moz-keyframes aspin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes aspin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes aspin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+.title span {
+  opacity: 0;
+  font-size: 8px;
+  font-family: space age;
+}
+.title h1{
+  position: relative;
+  top:72%;
+}
+@keyframes engifont { 
+  100% { opacity: 1; font-size: 38px}
+}
+.title span {
+  animation: engifont 3s forwards;
+}
+.title span:nth-child(1) {
+  animation-delay: 5.5s;
+}
+/*3d*/
+.background1 {
+  background: rgba(0,0,0,.1);
+  bottom: -50px;
+  background-size: cover;
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  top: -5%;
+}
+.background2 {
+  background: rgba(0,0,0,.15);
+  bottom: -50px;
+  background-size: cover;
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  top: -5%;
+}
+.background3 {
+  background: rgba(0,0,0,.2);
+  bottom: -50px;
+  background-size: cover;
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  top: -5%;
+}
+.background4 {
+  background: rgba(0,0,0,.25);
+  bottom: -50px;
+  background-size: cover;
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  top: -5%;
+}.background5 {
+  background: rgba(0,0,0,.3);
+  bottom: -50px;
+  background-size: cover;
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  top: -5%;
+}
+
+.circle1,.circle2,.circle3,.circle4,.circle5,.circle6{
+  height: 80px!important;
+  width: 80px!important;
+  border:1px solid white;
+  background-color: white;
+  border-radius: 10000px;
+  z-index: 100;}
+.circle1{
+  left:17%!important;
+  top:20%!important;
+}
+.circle2{
+  left: 20%!important;
+  top:40%!important; 
+}
+.circle3{
+  left: 23%!important;
+  top:60%!important; 
+}
+.circle4{
+  left:auto!important;
+  right:17%!important;
+  top:20%!important; 
+}
+.circle5{
+  left:auto!important;
+  right: 20%!important;
+  top:40%!important; 
+}
+.circle6{
+  left:auto!important;
+  right: 23%!important;
+  top:60%!important; 
+}
+.avgrund-active .wrapper{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -ms-filter: blur(5px);
+  -o-filter: blur(5px);
+  filter: blur(5px);
+  transition:blur 1.5s ease-in;
+}
+
+/*timer */
+@media (min-width: 992px){
+  .col-md-3 {
+      width: 25%;
+  }
+}
+@media (min-width: 992px){
+  .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+      float: left;
+  }
+}
+@media (min-width: 768px){
+  .col-sm-6 {
+      width: 50%;
+  }
+}
+@media (min-width: 768px){
+  .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+      float: left;
+  }
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 0px;
+      padding-left: 0px;
+  }
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 0px;
+      padding-left: 0px;
+  }
+}
+
+.countdown-container {
+  position: relative;
+  top: 0px;
+  width:50%;
+}
+.clock-item{
+  height: 100px
+}
+.clock{
+  display: flex;
+}
+.clock-item .inner {
+    width: 50%;
+}
+
+.clock-canvas {
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 50%;
+  height: 0px;
+  padding-bottom: 100%;
+}
+
+.text {
+  color: #fff; 
+  font-size: 30px;
+  font-weight: bold; 
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  width: 100%;
+  display: flex;
+  flex-direction:vertical;
+}
+
+.text .val {
+  font-size: 30px;
+}
+
+.text .type-time {
+  font-size: 20px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ENGINEER</title>
+		<link rel="stylesheet" type="text/css" href="./css/parallax.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/custom.css"/>
+		<link rel="stylesheet" href="./css/avgrund.css">
+		
+	</head>
+	<body ng-app="Engi" ng-controller = "MainController" class="avgrund-ready {{ misc.showModal==true ? 'avgrund-active' : '' }}">
+		<div id="container" class="wrapper">
+			<div id="scene" class="scene" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15">
+				<div class="layer" data-depth="0.20">
+					<div class="background"></div>
+				</div>
+				<div class="layer circle1" id="id1" data-depth="0.12" ng-click="showEvents()"></div>
+				<div class="layer circle2" id="id2" data-depth="0.12"></div>
+				<div class="layer circle3" id="id3" data-depth="0.12"></div>
+				<div class="layer circle4" id="id4" data-depth="0.12"></div>
+				<div class="layer circle5" id="id5" data-depth="0.12"></div>
+				<div class="layer circle6" id="id6" data-depth="0.12"></div>
+				<div class="layer title" data-depth="0.12">
+					<h1>
+						<span>think. create. engineer</span>
+					</h1>
+				</div>
+				<div class="layer stationary" data-depth="0.0">
+						<img class="rotater" src="./img/1.png"/>
+						<img class="rotater anti" src="./img/2.png"/>
+						<img class="rotater" src="./img/3.png"/>
+						<img class="rotater anti" src="./img/4.png"/>
+						<img class="rotater" src="./img/5.png"/>
+						<img class="rotater anti" src="./img/6.png"/>
+						<img class="rotater" src="./img/7.png"/>
+						<img class="only" src="./img/9.png"/>
+				</div>
+				<!--<div class="layer 50p 100w" data-depth="0">
+						<div class="countdown countdown-container">
+							<div class="clock">
+								<div class="clock-item clock-days countdown-time-value col-md-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-days" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-days type-time">DAYS</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clock-item clock-hours countdown-time-value col-md-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-hours" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-hours type-time">HOURS</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clock-item clock-minutes countdown-time-value col-md-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-minutes" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-minutes type-time">MINUTES</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clock-item clock-seconds countdown-time-value col-md-3">
+									<div class="wrap">
+										<div class="inner">
+											<div id="canvas-seconds" class="clock-canvas"></div>
+											<div class="text">
+												<p class="val">0</p>
+												<p class="type-seconds type-time">SECONDS</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div style='clear: both;'></div>
+							</div>
+							<div style='clear: both;'></div>
+						</div>
+					</div>-->
+				<div class="layer" data-depth="0.20"><div id="particles-js"></div></div>
+			</div>
+		</div>
+		<div ng-view autoscroll="false"></div>
+
+		<!-- scripts -->
+		<script src="./js/particles.min.js"></script>
+		<script src="./js/particle.config.js"></script>
+		<script src="./js/lib.js"></script>
+		<script src="./js/jquery.parallax.min.js"></script>
+		<script src="./js/jquery.avgrund.min.js"></script>
+		<script src="./js/jquery.final-countdown.min.js"></script>
+		<script src="./js/kinect.js"></script>
+		<script src="./js/angular.min.js"></script>
+		<script type="text/javascript" src="./js/ng-router.js"></script>
+		<script type="text/javascript" src="./js/ui-router.js"></script>
+		<script src="app.js"></script>
+		<script type="text/javascript" src="./js/custom.js"></script>
+		<script type="text/javascript" src="./js/ctrl/EventsController.js"></script>
+	</body>
+</html>
