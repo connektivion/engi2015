@@ -2,6 +2,20 @@ html{
   background-color: #000;
 }
 
+@font-face {
+    font-family: space age;
+    src: url('../fonts/spaceage.ttf');
+}
+.background {
+  background: url('../img/test.jpg') no-repeat 50% 100%;
+  bottom: 0px;
+  background-size: cover;
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  top: -5%;
+}
+
 .count-particles{
   background: #000022;
   position: absolute;
@@ -91,6 +105,7 @@ html{
   opacity: 0;
   font-size: 8px;
   font-family: space age;
+  color: white!important;
 }
 .title h1{
   position: relative;
@@ -195,52 +210,22 @@ html{
 }
 
 /*timer */
-@media (min-width: 992px){
-  .col-md-3 {
-      width: 25%;
-  }
-}
-@media (min-width: 992px){
-  .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
-      float: left;
-  }
-}
-@media (min-width: 768px){
-  .col-sm-6 {
-      width: 50%;
-  }
-}
-@media (min-width: 768px){
-  .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
-      float: left;
-  }
-  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-      position: relative;
-      min-height: 1px;
-      padding-right: 0px;
-      padding-left: 0px;
-  }
-  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-      position: relative;
-      min-height: 1px;
-      padding-right: 0px;
-      padding-left: 0px;
-  }
-}
-
 .countdown-container {
   position: relative;
-  top: 0px;
-  width:50%;
-}
-.clock-item{
-  height: 100px
+
 }
 .clock{
   display: flex;
+      justify-content: space-around;
+    width: 500px;
+    margin: 20px auto 10px;
+
 }
 .clock-item .inner {
-    width: 50%;
+  height: 0px;
+  padding-bottom: 100%;
+  position: relative; 
+  width: 100%;
 }
 
 .clock-canvas {
@@ -251,22 +236,53 @@ html{
 }
 
 .text {
-  color: #fff; 
-  font-size: 30px;
-  font-weight: bold; 
+  color: #fff;  
+  font-size: 20px;
+  font-weight: bold;  
+  margin-top: -32px;
   position: absolute;
   top: 50%;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   width: 100%;
-  display: flex;
-  flex-direction:vertical;
 }
-
+.text p{
+      margin: 24px 0px;
+}
 .text .val {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .text .type-time {
-  font-size: 20px;
+  font-size: 14px;
+}
+
+.kineticjs-content canvas{
+        width: 75px!important;
+        height: 75px!important;
+    }
+
+    .clock-item .inner{
+        width: 75px!important;
+        height: 75px!important;
+    }
+
+    
+    .background-leaf{
+          height: 300px;
+    width: 100%;
+    background-color: wheat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+    .background-leaf::before {
+    content: '';
+    background:rgba(0,0,0,.5);
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
 }
